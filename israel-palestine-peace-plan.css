@@ -1,0 +1,174 @@
+body {
+  background: #ffffff;
+  color: #000000;
+  font-family: sans-serif;
+}
+
+a {
+  color: #0000DD;
+}
+
+a:visited {
+  color: #000099;
+}
+
+dl {
+  margin-left: 1em;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-bottom: 1em;
+}
+
+#main-body {
+  max-width: 85em;
+  margin: auto;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-bottom: 3em;
+}
+
+#flags {
+  display: flex;
+  font-size: 3em;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#flags > figure {
+  text-align: center;
+}
+
+#flags > figure > #palestine-flag {
+  height: 100px;
+}
+
+#flags > figure > #israel-flag {
+  /* The Israel flag needs to be slightly taller in the CSS to compensate for
+   * the fact that the flag image appears to have transparent bars built in at
+   * the top and bottom. Compensating with CSS causes the Israeli and
+   * Palestinian flags to appear approximately the same height.
+   */
+  height: 120px;
+}
+
+#flags > div {
+  width: 150px;
+  text-align: center;
+}
+
+#flag-pins {
+  float: right;
+  width: 20em;
+  display: flex;
+  flex-direction: column;
+  margin: 1em;
+  /* padding: 0; */
+  /* margin: 0; */
+  /* padding-right: 1em; */
+  /* align-items: center; */
+}
+
+#flag-pins > figure {
+  /* width: 20em; */
+  width: 100%;
+  /* float: right; */
+  /* padding: 0; */
+  /* margin: auto; */
+  margin: 0;
+  text-align: center;
+}
+
+#flag-pins > figure > figcaption {
+  text-align: left;
+}
+
+#flag-pins > figure > img {
+  max-width: 100%;
+  /* max-width: 18em; */
+  height: 20em;
+  /* text-align: center; */
+  /* align-items: center; */
+  /* margin: auto; */
+  /* padding: auto; */
+  /* padding: 0; */
+  /* margin: 0; */
+}
+
+#wall-figure {
+  float: right;
+  width: 40em;
+}
+
+#wall-figure > img {
+  max-width: 100%;
+}
+
+
+
+
+/* hr { */
+/*   border: 1px solid black; */
+/*   /1* padding: 0; *1/ */
+/*   margin: 0; */
+/*   padding: 0; */
+/* } */
+
+/* #sidebar { */
+/*   position: fixed; */
+/*   top: 0; */
+/*   left: 0; */
+/*   width: 20em; */
+
+/*   padding-top: 1em; */
+/*   padding-left: 1em; */
+/*   padding-right: 1em; */
+/* } */
+
+/* #main { */
+/*   position: absolute; */
+/*   left: 22em; */
+/*   /1* right: 0; *1/ */
+/*   max-width: 80em; */
+/*   display: flex; */
+/*   flex-direction: column; */
+/* } */
+
+/* #centered-main { */
+/*   margin: auto; */
+/*   max-width: 80em; */
+/*   text-align: left; */
+/* } */
+
+/* div.mainpost { */
+/*   padding-bottom: 1em; */
+/* } */
+
+/* div.reply1 { */
+/*   padding-left: 1em; */
+/*   padding-bottom: 1em; */
+/* } */
+
+/* span.not-me { */
+/*   /1* background: #EEEEEE; *1/ */
+/*   color: #000099; */
+/*   font-family: serif; */
+/* } */
+
+/* div.reply2 { */
+/*   padding-left: 2em; */
+/*   padding-bottom: 1em; */
+/* } */
+
+/* span.reply-header { */
+/*   font-weight: bold; */
+/*   font-size: 0.9em; */
+/*   /1* margin-top: 0; *1/ */
+/*   /1* padding-top: 0; *1/ */
+/* } */
+
