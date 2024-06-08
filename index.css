@@ -38,7 +38,11 @@ a:visited {
   font-size: 1.3em;
 }
 
-#linkedin-link {
-  padding-top: 0.5em;
+#social-links {
+  padding-top: 2em;
   font-size: 1.3em;
+}
+
+#social-links > a > img {
+  max-height: 1.3em;
 }
