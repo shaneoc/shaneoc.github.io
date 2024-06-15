@@ -3,7 +3,71 @@
 <html>
   <head>
     <title>shane.oconnell.cc</title>
-    <link href="index.css" rel="stylesheet">
+    <style>
+body {
+  background: #ffffff;
+  color: #000000;
+  font-family: sans-serif;
+}
+
+a {
+  color: #0000DD;
+}
+
+a:visited {
+  color: #000099;
+}
+
+#main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#title {
+  font-size: 3em;
+}
+
+#palestine-linkedin {
+  padding-top: 1em;
+  font-size: 1.3em;
+}
+
+#peace-plan {
+  padding-top: 0.5em;
+  font-size: 1.3em;
+}
+
+#social-links {
+  padding-top: 2em;
+  font-size: 1.3em;
+}
+
+#social-links > a > img {
+  max-height: 1.3em;
+}
+
+#youtube-player {
+  aspect-ratio: 16 / 9;
+  padding-top: 3em;
+  flex-shrink: 1;
+  flex-grow: 1;
+  max-height: 20em;
+  text-align: center;
+}
+
+#youtube-player > iframe {
+  aspect-ratio: 16 / 9;
+  height: 100%;
+}
+
+    </style>
   </head>
   <body>
     <div id="main">
@@ -16,6 +80,12 @@
         <a href="https://mastodon.social/@shaneoc" rel="me"><img src="mastodon-logo.svg" alt="Mastodon"></a>
         <a href="https://github.com/shaneoc"><img src="github-logo.svg" alt="GitHub"></a>
         <a href="https://www.last.fm/user/kr4z2"><img src="last.fm-logo.png" alt="last.fm"></a>
+      </div>
+      <div id="youtube-player">
+        <iframe src="https://www.youtube-nocookie.com/embed/gCNeDWCI0vo?si=W-HJ709yFpLsjw9d" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <div id="instructions">
+        <a href="https://www.aljazeera.com/live">Watch Al Jazeera</a> to understand what is happening
       </div>
     </div>
   </body>
