@@ -3,7 +3,10 @@
  * possible and I have not written HTML in a while. I now realize I could have
  * used CSS flexbox layout for this and there are probably other better ways to
  * accomplish various things as well.
+ * Edit: Actually for the fixed sidebar, flexbox would not improve it really, I
+ * think. Anyway the code is still kind of a mess.
  */
+
 body {
   background: #ffffff;
   color: #000000;
