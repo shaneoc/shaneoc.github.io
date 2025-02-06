@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://shane.oconnell.cc/sitemap.xml
