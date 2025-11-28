@@ -3,11 +3,18 @@
 <html>
   <head>
     <title>shane.oconnell.cc</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
 body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background: #ffffff;
   color: #000000;
   font-family: sans-serif;
+  min-height: 90vh;
+  margin: 0;
 }
 
 a {
@@ -16,18 +23,6 @@ a {
 
 a:visited {
   color: #000099;
-}
-
-#main {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 #title {
@@ -53,58 +48,48 @@ a:visited {
   padding-top: 2em;
 }
 
-#buy-links {
-  padding-top: 2em;
-  font-size: 1em;
-  text-align: center;
-}
-
 #youtube-player {
   aspect-ratio: 16 / 9;
   padding-top: 3em;
   flex-shrink: 1;
   flex-grow: 1;
   max-height: 20em;
-  text-align: center;
+  max-width: 100vw;
 }
 
-#youtube-player > iframe {
-  aspect-ratio: 16 / 9;
-  height: 100%;
+#buy-links {
+  padding-top: 2em;
+  font-size: 1em;
+  text-align: center;
 }
 
     </style>
   </head>
   <body>
-    <div id="main">
-      <div id="title">Shane's Website</div>
-      <div id="palestine-linkedin"><a href="palestine-linkedin/index.html">My LinkedIn Posts on Palestine</a></div>
-      <div id="peace-plan"><a href="israel-palestine-peace-plan.html">An Israel-Palestine Peace Plan</a></div>
-      <div id="artificial-intelligence"><a href="ai/">Artificial Intelligence</a></div>
-      <div id="social-links">
-        <a href="https://www.linkedin.com/in/shaneoconnell" target="_blank">LinkedIn</a> |
-        <a href="https://x.com/ShaneOConnell" target="_blank">X</a> |
-        <a href="https://mastodon.social/@shaneoc" rel="me" target="_blank">Mastodon</a> |
-        <a href="https://github.com/shaneoc" target="_blank">GitHub</a> |
-        <a href="https://www.last.fm/user/kr4z2" target="_blank">last.fm</a>
-      </div>
-      <div id="youtube-player">
-        <iframe src="https://www.youtube-nocookie.com/embed/gCNeDWCI0vo?si=W-HJ709yFpLsjw9d" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      </div>
-      <div id="instructions">
-        <a href="https://www.aljazeera.com/live" target="_blank">Watch Al Jazeera</a> to understand what is happening
-      </div>
-      <div id="buy-links">
-        <a href="https://www.mapart.com/Toronto-Pocket-Street-Atlas--20073_p_342.html" target="_blank">Paper map of Toronto</a> |
-        <a href="https://www.mapart.com/Maps-Atlases_c_7.html" target="_blank">Other cities</a><br>
-        For voice: <a href="https://en.wikipedia.org/wiki/Baofeng_UV-5R" target="_blank">Baofeng UV-5R</a>
-        (<a href="https://www.amazon.ca/BAOFENG-5RH-430-450MHz-Rechargeable-Frequency/dp/B0D4K8TCVW" target="_blank">Amazon</a> |
-        <a href="https://www.amazon.ca/BAOFENG-Handheld-144-148Mhz-430-450Mhz-Receiving/dp/B0D45T2KKJ" target="_blank">Alternate</a>)<br>
-        For the computer:
-        <a href="https://www.rtl-sdr.com/about-rtl-sdr/" target="_blank">RTL-SDR</a>
-        (<a href="https://www.amazon.ca/RTL-SDR-Blog-RTL2832U-Software-Defined/dp/B0CD7558GT" target="_blank">Amazon</a> |
-        <a href="https://www.amazon.ca/Nooelec-NESDR-SMArt-Bundle-R820T2-Based/dp/B01GDN1T4S" target="_blank">Alternate</a>)
-      </div>
+    <div id="title">Shane's Website</div>
+    <div id="palestine-linkedin"><a href="palestine-linkedin/index.html">My LinkedIn Posts on Palestine</a></div>
+    <div id="peace-plan"><a href="israel-palestine-peace-plan.html">An Israel-Palestine Peace Plan</a></div>
+    <div id="artificial-intelligence"><a href="ai/">Artificial Intelligence</a></div>
+    <div id="social-links">
+      <a href="https://www.linkedin.com/in/shaneoconnell" target="_blank">LinkedIn</a> |
+      <a href="https://x.com/ShaneOConnell" target="_blank">X</a> |
+      <a href="https://mastodon.social/@shaneoc" rel="me" target="_blank">Mastodon</a> |
+      <a href="https://github.com/shaneoc" target="_blank">GitHub</a>
+    </div>
+    <iframe id="youtube-player" src="https://www.youtube-nocookie.com/embed/gCNeDWCI0vo?si=W-HJ709yFpLsjw9d" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <div id="instructions">
+      <a href="https://www.aljazeera.com/live" target="_blank">Watch Al Jazeera</a> to understand what is happening
+    </div>
+    <div id="buy-links">
+      <a href="https://www.mapart.com/Toronto-Pocket-Street-Atlas--20073_p_342.html" target="_blank">Paper map of Toronto</a> |
+      <a href="https://www.mapart.com/Maps-Atlases_c_7.html" target="_blank">Other cities</a><br>
+      For voice: <a href="https://en.wikipedia.org/wiki/Baofeng_UV-5R" target="_blank">Baofeng UV-5R</a>
+      (<a href="https://www.amazon.ca/BAOFENG-5RH-430-450MHz-Rechargeable-Frequency/dp/B0D4K8TCVW" target="_blank">Amazon</a> |
+      <a href="https://www.amazon.ca/BAOFENG-Handheld-144-148Mhz-430-450Mhz-Receiving/dp/B0D45T2KKJ" target="_blank">Alternate</a>)<br>
+      For the computer:
+      <a href="https://www.rtl-sdr.com/about-rtl-sdr/" target="_blank">RTL-SDR</a>
+      (<a href="https://www.amazon.ca/RTL-SDR-Blog-RTL2832U-Software-Defined/dp/B0CD7558GT" target="_blank">Amazon</a> |
+      <a href="https://www.amazon.ca/Nooelec-NESDR-SMArt-Bundle-R820T2-Based/dp/B01GDN1T4S" target="_blank">Alternate</a>)
     </div>
   </body>
 </html>
