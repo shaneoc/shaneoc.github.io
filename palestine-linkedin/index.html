@@ -1,45 +1,70 @@
 <!DOCTYPE html>
+<!-- Copyright 2025 Shane O'Connell -->
+<html><head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Palestine LinkedIn Posts - shane.oconnell.cc</title>
+<style type="text/css">
+body {
+    display: flex;
+    justify-content: center;
+    background: #ffffff;
+    color: #000000;
+    font-family: sans-serif;
+}
 
-<html>
-  <head>
-    <title>Shane&#039;s Palestine LinkedIn Posts</title>
-    <link href="base-updated.css" rel="stylesheet">
-  </head>
-  <body>
-    <div id="sidebar">
-<h1>Shane's Palestine<br>LinkedIn Posts</h1>
+a {
+    color: #0000DD;
+}
 
-<a href="index.html">Overview</a>
+a:visited {
+    color: #000099;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #CCCCCC;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+#main {
+    width: clamp(50ch, 50%, 80ch);
+}
+
+</style>
+<script>
+if (document.location.href.startsWith('file:')) {
+    document.addEventListener('DOMContentLoaded', (event) => {
+        const index_links = document.getElementsByClassName('index-link');
+        for (let i = 0; i < index_links.length; i++) {
+            index_links[i].href += 'index.html';
+        }
+    });
+}
+</script>
+</head><body><div id="main">
+<h1>My Palestine LinkedIn Posts</h1>
+<p>This page contains a collection of my LinkedIn posts that I made during the
+recent war in Gaza. I have stored them here so that I can refer to them in the
+future.</p>
+<h2>Table of Contents</h2>
 <ol>
-  <li><a href="post-1-al-jazeera-journalists.html">Al Jazeera Journalists</a></li>
-  <li><a href="post-2-after-the-revolution.html">After the Revolution</a></li>
-  <li><a href="post-3-itu-wireless-region-map.html">ITU Wireless Region Map</a></li>
-  <li><a href="post-4-watching-fox-news.html">Watching Fox News</a></li>
-  <li><a href="post-5-aaron-bushnell.html">Aaron Bushnell</a></li>
-  <li><a href="post-6-deciding-how-to-respond.html">Deciding How to Respond</a></li>
-  <li><a href="post-7-manipulating-people-ethically.html">Manipulating People Ethically</a></li>
-  <li><a href="post-8-reassuring-the-palestinians.html">Reassuring the Palestinians</a></li>
-  <li><a href="post-9-world-central-kitchen-workers.html">World Central Kitchen Workers</a></li>
-  <li><a href="post-10-israels-ai-targeting-system.html">Israel's AI Targeting System</a></li>
-  <li><a href="post-11-public-letter-to-bob-rae.html">Public Letter to Bob Rae</a></li>
+<li><a href="post-1-al-jazeera-journalists.html">Al Jazeera Journalists</a></li>
+<li><a href="post-2-after-the-revolution.html">After the Revolution</a></li>
+<li><a href="post-3-itu-wireless-region-map.html">ITU Wireless Region Map</a></li>
+<li><a href="post-4-watching-fox-news.html">Watching Fox News</a></li>
+<li><a href="post-5-aaron-bushnell.html">Aaron Bushnell</a></li>
+<li><a href="post-6-deciding-how-to-respond.html">Deciding How to Respond</a></li>
+<li><a href="post-7-manipulating-people-ethically.html">Manipulating People Ethically</a></li>
+<li><a href="post-8-reassuring-the-palestinians.html">Reassuring the Palestinians</a></li>
+<li><a href="post-9-world-central-kitchen-workers.html">World Central Kitchen Workers</a></li>
+<li><a href="post-10-israels-ai-targeting-system.html">Israel's AI Targeting System</a></li>
+<li><a href="post-11-public-letter-to-bob-rae.html">Public Letter to Bob Rae</a></li>
 </ol>
-<a href="../index.html">Back to homepage</a>
-    </div>
-    <div id="main">
-      <!-- <div id="centered-main"> -->
-      
-<div class="mainpost">
-  <p>Recently, I have been posting on my LinkedIn profile in response to the
-  events in Isreal and Palestine. After a series of posts, I ended up posting
-  the beginning of what could be considered a peace plan for Isreal and
-  Palestine. After trying to spread awareness of this solution by sending
-  people the link to my LinkedIn page, I realized that much of the content was
-  hidden or difficult to read if you were not logged in. I have therefore
-  reproduced the content on this page, so that I can use this website URL
-  instead when I want to show someone my LinkedIn posts.</p>
-</div>
-
-      <!-- </div> -->
-    </div>
-  </body>
-</html>
+<p><a href="../" class="index-link">Back to homepage</a></p>
+</div></body></html>
