@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<!-- Copyright 2025 Shane O'Connell -->
+<html><head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Resume - shane.oconnell.cc</title>
+<style>
+body {
+    display: flex;
+    justify-content: center;
+    background: #ffffff;
+    color: #000000;
+    font-family: sans-serif;
+    overflow-wrap: break-word;
+}
+
+a {
+    color: #0000DD;
+}
+
+a:visited {
+    color: #000099;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #CCCCCC;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+#main {
+    width: clamp(50ch, 50%, 80ch);
+    max-width: 100%;
+}
+
+.job-date {
+    float: right;
+    color: #333333;
+    margin: 0 0 0 1em;
+}
+
+.job-title {
+    color: #333333;
+}
+
+.job-description {
+    clear: both;
+}
+
+.job-description > ul {
+    margin-top: 0;
+}
+
+.skills-entry > p {
+    margin-bottom: 0;
+}
+
+.skills-entry > blockquote {
+    margin-top: 0;
+}
+
+.skills-entry > blockquote > p {
+    margin-top: 0;
+}
+
+.education-entry > p {
+    margin-bottom: 0;
+}
+
+.education-entry > ul {
+    margin-top: 0;
+}
+
+.edit {
+    border: dashed thin;
+    margin: 1em 0;
+    padding: 0.2em 0.4em;
+    background-color: #fafafa;
+}
+
+.edit > :first-child {
+    margin-top: 0;
+}
+
+.edit > :last-child {
+    margin-bottom: 0;
+}
+
+</style>
+<script>
+if (document.location.href.startsWith('file:')) {
+    document.addEventListener('DOMContentLoaded', (event) => {
+        const index_links = document.getElementsByClassName('index-link');
+        for (let i = 0; i < index_links.length; i++) {
+            index_links[i].href += 'index.html';
+        }
+    });
+}
+</script>
+</head><body><div id="main">
+<h1>Shane O'Connell</h1>
+<p><a href="https://www.linkedin.com/in/shaneoconnell" target="_blank">LinkedIn</a> |
+<a href="https://github.com/shaneoc" target="_blank">GitHub</a> |
+<a href="./" class="index-link">Website</a><br>
+Toronto, Canada</p>
+<h2>Summary</h2>
+<p>My goal is to find employment income, as well as a group of like-minded people
+to work on engineering problems. I would prefer to work on a team that is
+trying to accomplish something that is considered technically difficult. I am
+open to working on many different types of engineering problems.</p>
+<h2>Work Experience</h2>
+<div class="job-entry">
+<strong>shane.oconnell.cc</strong> <span class="job-title">Principal Engineer</span>
+<div class="job-date">November 2022 - Present</div>
+<div class="job-description">
+<ul>
+<li>Attempted to solve world problems
+<ul>
+<li>Wrote <a href="israel-palestine-peace-plan.html">Israel-Palestine Peace Plan</a> and
+<a href="palestine-linkedin/2024-04-17-public-letter-to-bob-rae.html">sent it to the
+UN</a></li>
+<li>Publicly proposed a plan to <a href="palestine-linkedin/2025-04-13-food-delivery-drones.html">provide free food and
+shelter</a> to
+world's population in order to end homelessness, end world hunger, and end
+the killing of animals for food</li>
+</ul>
+</li>
+<li>Engaged in scientific research
+<ul>
+<li>Performed experiments and did research related to a theory about <a href="ai/chatgpt/0024-toxicity-album-overview.html#prison-song">language
+and the brain hemispheres</a></li>
+<li>Created <a href="ai/" class="index-link">a website</a> containing my conversations with
+ChatGPT in order to demonstrate some uses for AI, as well as using it as
+form of creative expression</li>
+</ul>
+</li>
+<li>Improved computer security
+<ul>
+<li>Created a new Linux distribution with custom package manager written in
+Python</li>
+<li>Designed and implemented software for managing large amounts of information
+saved from the Internet</li>
+<li>Designed and implemented a custom network firewall, which includes a
+hardware component designed to be sufficient to prevent the <a href="https://en.wikipedia.org/wiki/Intel_Management_Engine" target="_blank">Intel
+Management Engine</a>
+from accessing the Internet</li>
+</ul>
+</li>
+<li>Attempted to resolve personal issues
+<ul>
+<li>Have experienced some very stressful situations as a consequence of
+something that happened in 2021 where <a href="journal/2025-12-14-strange-2021.html">my computer appeared to be
+hacked</a> and I was brought to a mental
+health facility as a result of telling the police about it
+<ul>
+<li>As a consequence, I feel very distrustful of others</li>
+</ul>
+</li>
+<li>Attempted to deal with seemingly arbitrary hostility from others
+<ul>
+<li>Ignored by various people with no explanation</li>
+<li>Repeatedly told by others that I have a mental illness, without the
+illness being specified or any symptoms of a mental illness identified</li>
+<li><a href="ai/chatgpt/0002-cheerio-chat.html#trapped-in-my-apartment">Ignored</a> and
+<a href="ai/chatgpt/0010-palestinian-prisoners-release.html#fire-safety-concerns">harassed</a>
+by the employees in the building I live in</li>
+<li>Posted online about being <a href="palestine-linkedin/2025-12-07-trapped-in-my-apartment.html">trapped in my
+apartment</a> as
+a consequence of the situation, in an attempt to find someone who can
+help</li>
+</ul>
+</li>
+<li>In reality, I most likely need a girlfriend before I find a job</li>
+</ul>
+</li>
+<li>Did not make any employment income during this period</li>
+</ul>
+</div></div>
+<div class="job-entry">
+<strong>RapidSilicon</strong> <span class="job-title">Principal Engineer</span>
+<div class="job-date">February 2022 - November 2022</div>
+<div class="job-description">
+<ul>
+<li>Responsible for the development of RapidSilicon's timing analysis software</li>
+<li>Partially completed code to allow the VPR open source placement and routing
+engine to interface with OpenSTA to analyze timing, rather than using the
+Tatum timing analyzer that is part of VPR</li>
+</ul>
+</div></div>
+<div class="job-entry">
+<strong>Groq</strong> <span class="job-title">Compiler Engineer</span>
+<div class="job-date">January 2021 - February 2022</div>
+<div class="job-description">
+<ul>
+<li>Worked on an MLIR-based compiler written in C++ that compiles neural network
+models written in PyTorch and ONNX for the Groq TSP</li>
+<li>Analyzed compiler runtime to find optimizations that resulted in a 5x
+improvement in compile time</li>
+<li>Designed and implemented an optimization pass which improved execution speed
+on the chip up to 16x, in some cases</li>
+<li>Designed improvements to the representation of graphs between compiler passes
+which reduced the complexity of representing graphs and reduced the
+complexity of the algorithms that operate on it</li>
+</ul>
+<div class="edit">
+<p>I made it sound like I did a lot, however if I remember correctly I think the
+optimizations I described might just mainly be referring to one change that I
+made that made a big difference.</p>
+<p>I resigned from this job after it appeared that my <a href="journal/2025-12-14-strange-2021.html">computer had been
+hacked</a> and I was brought to a mental
+health facility after telling the police about it. It was a highly stressful
+time and I was not sure what I should do.</p>
+</div>
+</div></div>
+<div class="job-entry">
+<strong>Intel</strong> <span class="job-title">Deep Learning Software Engineer</span>
+<div class="job-date">April 2016 - January 2021</div>
+<div class="job-description">
+<ul>
+<li>One of three founding members on the Deep Learning Accelerator project for
+Intel FPGAs</li>
+<li>Designed hardware for accelerating neural networks on FPGAs</li>
+<li>Played a strong technical role over the life of the project, by identifying
+new optimization opportunities and providing guidance to newer members of the
+team</li>
+<li>Implemented hardware designs using a combination of SystemVerilog and OpenCL
+C using the Intel FPGA SDK for OpenCL</li>
+<li>Provided feedback and suggestions for optimizations to improve the Intel FPGA
+OpenCL compiler based on real-world use</li>
+</ul>
+</div></div>
+<div class="job-entry">
+<strong>Altera</strong> <span class="job-title">Senior Software Engineer</span>
+<div class="job-date">May 2015 - March 2016</div>
+<div class="job-description">
+<ul>
+<li>Developed and maintained software code in C and C++ for the FPGA SDK for
+OpenCL</li>
+<li>Implemented new features, fixed bugs, and improved performance of the runtime
+and Linux device driver code</li>
+<li>After December 2015, this position was at Intel, which acquired Altera</li>
+</ul>
+</div></div>
+<div class="job-entry">
+<strong>Altera</strong> <span class="job-title">Senior Software Engineer</span>
+<div class="job-date">September 2013 - April 2015</div>
+<div class="job-description">
+<ul>
+<li>Worked on the TimeQuest timing analyzer, part of the Quartus FPGA design
+software</li>
+<li>Developed and maintained software code for a large C++ application that
+analyzes circuit timing using multi-threaded graph traversals on large graphs
+with millions of edges and nodes</li>
+<li>Analyzed performance with code analysis tools and implemented changes to
+improve performance</li>
+</ul>
+</div></div>
+<div class="job-entry">
+<strong>Avalon Microelectronics</strong> <span class="job-title">Senior Design Engineer</span>
+<div class="job-date">May 2010 - August 2013</div>
+<div class="job-description">
+<ul>
+<li>Designed hardware cores in SystemVerilog for FPGAs to implement various
+networking protocols including OTN, Ethernet, and Fibre Channel</li>
+<li>Analyzed hardware using the Quartus FPGA design software to find ways to
+reduce area and improve performance</li>
+<li>After December 2010, this position was at Altera, which acquired Avalon
+Microelectronics</li>
+</ul>
+</div></div>
+<h2>Skills</h2>
+<div class="skills-entry">
+<p><strong>Programming Languages</strong></p>
+<blockquote>
+<p>C++, Python, SystemVerilog, OpenCL, HTML, JavaScript/TypeScript</p>
+</blockquote>
+</div>
+<div class="skills-entry">
+<p><strong>Tools</strong></p>
+<blockquote>
+<p>git, bash, vim, tmux</p>
+</blockquote>
+</div>
+<h2>Education</h2>
+<div class="education-entry">
+<p><strong>University of Toronto</strong></p>
+<ul>
+<li>Master of Engineering, Computer Engineering (2017)</li>
+</ul>
+</div>
+<div class="education-entry">
+<p><strong>Memorial University of Newfoundland</strong></p>
+<ul>
+<li>Bachelor of Engineering, Computer Engineering (2010)</li>
+</ul>
+</div>
+<h2>Publications</h2>
+<ul>
+<li><strong>DLA: Compiler and FPGA Overlay for Neural Network Inference Acceleration</strong>
+28th International Conference on Field Programmable Logic and Applications
+(FPL), August 2018 (with 10 other co-authors)
+<a href="https://doi.org/10.1109/FPL.2018.00077" target="_blank">https://doi.org/10.1109/FPL.2018.00077</a></li>
+<li><strong>Harnessing Numerical Flexibility for Deep Learning on FPGAs</strong> HEART 2018:
+Proceedings of the 9th International Symposium on Highly-Efficient
+Accelerators and Reconfigurable Technologies, June 2018 (with 10 other
+co-authors)
+<a href="https://doi.org/10.1145/3241793.3241794" target="_blank">https://doi.org/10.1145/3241793.3241794</a></li>
+<li><strong>An OpenCL™ Deep Learning Accelerator on Arria 10</strong> FPGA '17: Proceedings of
+the 2017 ACM/SIGDA International Symposium on Field-Programmable Gate Arrays,
+February 2017 (with 4 other co-authors)
+<a href="https://doi.org/10.1145/3020078.3021738" target="_blank">https://doi.org/10.1145/3020078.3021738</a></li>
+</ul>
+<h2>Patents</h2>
+<ul>
+<li><strong>Floating-point decomposition circuitry with dynamic precision</strong> Patent
+pending, published 2020-07-09 (with 2 other co-inventors)</li>
+<li><strong>Fast filtering</strong> US Patent 10083007, granted 2018-09-25 (with 3 other co-inventors)</li>
+<li><strong>Methods and apparatus for rapid interrupt lookups</strong> US Patent 9811484,
+granted 2017-11-07 (with no other co-inventors)</li>
+</ul>
+<p>Last Update: 2025-12-17</p>
+<p><a href="./" class="index-link">Back to homepage</a></p>
+</div></body></html>
