@@ -224,7 +224,7 @@ see what new features it brings.</p>
 architecture. This means it activates different specialized subnetworks, or
 &quot;experts,&quot; depending on what the task is, which helps boost its efficiency and
 performance.
-(<a href="https://www.grokmountain.com/p/a-deep-dive-into-the-architecture" target="_blank">Grok Mountain</a>)</p>
+(<a href="https://www.grokmountain.com/p/a-deep-dive-into-the-architecture">Grok Mountain</a>)</p>
 <p><strong>Me:</strong> Does ChatGPT use a mixture of experts?</p>
 <p><strong>ChatGPT:</strong> No, ChatGPT doesn't use a Mixture-of-Experts architecture. It
 relies on a more traditional transformer-based model, where all the parameters
@@ -254,14 +254,14 @@ like FPGA models, like numbers?</p>
 <p><strong>ChatGPT:</strong> Intel's latest FPGA models include the Agilex 9, Agilex 7, and
 Stratix 10 series. These are the most recent and offer a lot of advanced
 features and high performance for different applications.
-(<a href="https://www.intel.com/content/www/us/en/products/details/fpga.html" target="_blank">Intel</a>)</p>
+(<a href="https://www.intel.com/content/www/us/en/products/details/fpga.html">Intel</a>)</p>
 <p><strong>Me:</strong> Do you know how the DSP is designed in the Agilex series?</p>
 <p><strong>ChatGPT:</strong> The Agilex series from Intel has DSP blocks that are quite
 versatile. They support different precision levels, from 9x9 up to 54x54 bits,
 and they can handle both fixed-point and floating-point operations. They also
 support half-precision and single-precision floating-point formats, like FP16
 and BFLOAT16, making them really flexible for various signal processing tasks.
-(<a href="https://www.intel.com/content/www/us/en/docs/programmable/683458/current/variable-precision-dsp.html" target="_blank">Intel</a>)</p>
+(<a href="https://www.intel.com/content/www/us/en/docs/programmable/683458/current/variable-precision-dsp.html">Intel</a>)</p>
 <p><strong>Me:</strong> By BFLOAT16, do you mean BrainFLOAT?</p>
 <p><strong>ChatGPT:</strong> Yes, exactly! BFLOAT16 stands for Brain Floating Point, and it's a
 format that was developed to maintain a wide dynamic range while using fewer
@@ -282,7 +282,7 @@ this topic.</p>
 accumulators that support block floating-point operations. This is particularly
 useful for applications like machine learning, as it helps with efficient data
 processing.
-(<a href="https://www.intel.com/content/www/us/en/docs/programmable/683458/current/variable-precision-dsp.html" target="_blank">Intel</a>)</p>
+(<a href="https://www.intel.com/content/www/us/en/docs/programmable/683458/current/variable-precision-dsp.html">Intel</a>)</p>
 <p><strong>Me:</strong> Can you tell me which Altera FPGAs support the accumulator that
 supports block floating point?</p>
 <p><strong>ChatGPT:</strong> It looks like the Stratix IV and Arria II series from Altera can
@@ -290,7 +290,7 @@ handle floating-point operations and can be configured for block floating-point
 arithmetic, but they don't have dedicated accumulators specifically for that.
 To achieve that functionality, you'd typically use Altera's DSP Builder
 Advanced Blockset to create custom accumulators.
-(<a href="https://www.bdti.com/MyBDTI/pubs/Altera_FloatingPoint_Design.pdf" target="_blank">BDTI</a>)</p>
+(<a href="https://www.bdti.com/MyBDTI/pubs/Altera_FloatingPoint_Design.pdf">BDTI</a>)</p>
 <p><strong>Me:</strong> So there's... I think there's... I think that the Edge, like,
 series... Oh, I'm not sure, like...</p>
 <div class="dated-edit">
@@ -315,7 +315,7 @@ accurate manner.</p>
 It has versatile DSP blocks that can handle both fixed-point and
 single-precision floating-point arithmetic, and they include a dual
 accumulator, which is great for block floating-point computations.
-(<a href="https://www.intel.com/content/www/us/en/docs/programmable/683832/21-2/variable-precision-dsp-blocks-overview.html" target="_blank">Intel</a>)</p>
+(<a href="https://www.intel.com/content/www/us/en/docs/programmable/683832/21-2/variable-precision-dsp-blocks-overview.html">Intel</a>)</p>
 <p><strong>Me:</strong> But does the accumulator support the shared exponent method of block
 floating point in StratX 10?</p>
 <p><strong>ChatGPT:</strong> The Stratix 10's DSP blocks do support single-precision
@@ -323,7 +323,7 @@ floating-point operations, but they don't natively support the block
 floating-point method that uses a shared exponent for a group of values. So,
 while they are quite advanced, they don't have that specific block
 floating-point feature.
-(<a href="https://www.intel.com/programmable/technical-pdfs/683832.pdf" target="_blank">Intel</a>)</p>
+(<a href="https://www.intel.com/programmable/technical-pdfs/683832.pdf">Intel</a>)</p>
 <p><strong>Me:</strong> But the Agilent series does. Is that what you're saying?</p>
 <p><strong>ChatGPT:</strong> Yes, that's correct! The Agilex series does have support for block
 floating-point operations with shared exponents, which gives it an edge in
@@ -334,13 +334,13 @@ accumulator that supports block floating point and the shared exponent?</p>
 <p><strong>ChatGPT:</strong> The first Agilex chips that support block floating-point
 operations with shared exponents were introduced by Intel in 2019. It's a neat
 advancement for applications like machine learning!
-(<a href="https://www.altera.com/products/fpga/agilex/7/f-series" target="_blank">Altera</a>)</p>
+(<a href="https://www.altera.com/products/fpga/agilex/7/f-series">Altera</a>)</p>
 <p><strong>Me:</strong> Which design makes you think that this feature came out in 2019?</p>
 <p><strong>ChatGPT:</strong> Intel introduced the Agilex FPGA family in April 2019. These chips
 are designed for data-centric tasks and include features like
 variable-precision DSP, which supports block floating-point operations with
 shared exponents, making them great for AI applications.
-(<a href="https://www.intc.com/news-events/press-releases/detail/82/intel-driving-data-centric-world-with-new-10nm-intel-agilex" target="_blank">Intel+1</a>)</p>
+(<a href="https://www.intc.com/news-events/press-releases/detail/82/intel-driving-data-centric-world-with-new-10nm-intel-agilex">Intel+1</a>)</p>
 <p><strong>Me:</strong> Do all Agilex chips support the accumulator that supports the shared
 exponent block floating point?</p>
 <p><strong>ChatGPT:</strong> Not all Agilex chips have that specific block floating-point
@@ -348,12 +348,12 @@ accumulator feature. It's available in certain models within the Agilex family,
 so the support can vary depending on the exact model you choose.</p>
 <p><strong>Me:</strong> Can you give me a website link that describes the Agilex feature that
 allows the shared exponent accumulator with a block floating point?</p>
-<p><strong>ChatGPT:</strong> <a href="https://cdrdv2-public.intel.com/666477/ug-ag-dsp-683037-666477.pdf" target="_blank">Intel® Agilex™ Variable Precision DSP Blocks User Guide</a></p>
+<p><strong>ChatGPT:</strong> <a href="https://cdrdv2-public.intel.com/666477/ug-ag-dsp-683037-666477.pdf">Intel® Agilex™ Variable Precision DSP Blocks User Guide</a></p>
 <p>It looks like the Agilex FPGAs have variable-precision DSP blocks that support
 half-precision and BFLOAT16 operations, but they don't natively support block
 floating-point with a shared exponent. If you'd like more detailed
 specifications, I can definitely find more information for you!
-(<a href="https://www.altera.com/products/fpga/agilex/7/f-series" target="_blank">Altera</a>)</p>
+(<a href="https://www.altera.com/products/fpga/agilex/7/f-series">Altera</a>)</p>
 <div class="link-table">
 <div class="link-table-left"><a href="0030-generate-attractive-woman-image.html">Previous</a></div>
 <div class="link-table-middle"><a href="../" class="index-link">Index</a></div>

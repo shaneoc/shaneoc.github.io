@@ -145,14 +145,14 @@ removed?</p>
 <div>2025-11-27</div>
 <p>The paper I am referring to was a paper that was published while I worked
 for the Intel Programmable Solutions Group (now called
-<a href="https://en.wikipedia.org/wiki/Altera" target="_blank">Altera</a>). The paper is on some
+<a href="https://en.wikipedia.org/wiki/Altera">Altera</a>). The paper is on some
 optimization techniques that can be used to improve the efficiency of
 processors that execute AI models, and therefore make them run faster.</p>
 <p>There were two versions of the paper that were published. The
-<a href="https://dl.acm.org/doi/10.1145/3241793.3241794" target="_blank">first version</a>
+<a href="https://dl.acm.org/doi/10.1145/3241793.3241794">first version</a>
 has my name included as an author
 (<a href="../../journal/2025-02-03-paper-with-my-name.jpg">my photo</a>).
-After this paper was published, <a href="https://cdrdv2-public.intel.com/650513/wp-01281-harnessing-numerical-flexibility-for-deep-learning-on-fpgas.pdf" target="_blank">another
+After this paper was published, <a href="https://cdrdv2-public.intel.com/650513/wp-01281-harnessing-numerical-flexibility-for-deep-learning-on-fpgas.pdf">another
 version</a>
 was published with Intel branding where my name was mysteriously removed
 (<a href="../../journal/2025-02-03-paper-without-my-name.jpg">my photo</a>).</p>
@@ -161,11 +161,11 @@ frustrating for me because core ideas from the paper came from the
 optimization work that I had been doing as part of the team working on a
 project we called the Deep Learning Accelerator (DLA). DLA is a design that
 can be loaded onto
-<a href="https://en.wikipedia.org/wiki/Field-programmable_gate_array" target="_blank">FPGAs</a> so
+<a href="https://en.wikipedia.org/wiki/Field-programmable_gate_array">FPGAs</a> so
 that the FPGA can be used to accelerate AI models. My job was to try to
 improve the performance of the design and add support for new neural
 networks. From what I can tell, it appears that Intel is now referring to
-DLA as the <a href="https://www.altera.com/products/development-tools/fpga-ai-suite" target="_blank">FPGA AI
+DLA as the <a href="https://www.altera.com/products/development-tools/fpga-ai-suite">FPGA AI
 Suite</a>.</p>
 <p>One of the things I did when I was optimizing the design was a technique
 that involved factoring out the exponent from a group of floating point
@@ -175,7 +175,7 @@ multipliers, with the result then accumulating in a floating-point
 accumulator. On an FPGA, this roughly doubles the number of multipliers
 that you can use, and therefore doubles the speed. I was very pleased with
 this optimization. After I implemented it, I Googled and realized that
-there was a technique called <a href="https://en.wikipedia.org/wiki/Block_floating_point" target="_blank">block floating
+there was a technique called <a href="https://en.wikipedia.org/wiki/Block_floating_point">block floating
 point</a> that had been
 used in other contexts that was similar. After I found out, I started
 using the same phrase to refer to my work so that people would understand
@@ -194,14 +194,14 @@ reconfigurable logic to connect them, like I did for the DLA project. If
 Intel made this change, it is likely because their customers are actually
 using it, and so they are probably making a lot of money from my idea.</p>
 <p>The documentation for the Agilex and Stratix chips appear to include the
-feature as part of what is called the <em>AI Tensor Block</em>. I found <a href="https://cdrdv2-public.intel.com/776602/agilex-5-fpgas-enhanced-dsp-with-ai-tensor-block-architecture-brief.pdf" target="_blank">this
+feature as part of what is called the <em>AI Tensor Block</em>. I found <a href="https://cdrdv2-public.intel.com/776602/agilex-5-fpgas-enhanced-dsp-with-ai-tensor-block-architecture-brief.pdf">this
 document</a><sup>[1]</sup>,
 which includes a diagram showing a common exponent passed to an accumulator
-in Figure 6. I also found <a href="https://dl.acm.org/doi/10.1145/3431920.3439293" target="_blank">this
+in Figure 6. I also found <a href="https://dl.acm.org/doi/10.1145/3431920.3439293">this
 paper</a><sup>[2]</sup>,
 which unfortunately is not available to the public, however you can see a
 reference to block floating point in the Abstract. After doing some
-Googling, I was able to find <a href="https://nuscap.gitlabpages.inria.fr/diapos/bpasca2022.pdf" target="_blank">these
+Googling, I was able to find <a href="https://nuscap.gitlabpages.inria.fr/diapos/bpasca2022.pdf">these
 slides</a><sup>[3]</sup>,
 which very clearly show on Slide 6 (<em>AI Tensor Block Architecture</em>), that
 the floating-point accumulator is able to accept a shared exponent.</p>
@@ -248,37 +248,37 @@ like, I can try to dig deeper into its publication history.)</p>
 <ul>
 <li>This is described on Intel’s website as a <strong>white paper</strong>, not a
 peer-reviewed academic journal article.
-(<a href="https://www.intel.com/content/www/us/en/content-details/650513/harnessing-numerical-flexibility-for-deep-learning-on-fpgas-white-paper.html" target="_blank">Intel</a>)</li>
+(<a href="https://www.intel.com/content/www/us/en/content-details/650513/harnessing-numerical-flexibility-for-deep-learning-on-fpgas-white-paper.html">Intel</a>)</li>
 </ul>
 </li>
 <li><strong>Authors (as listed)</strong>: According to the PDF version: Andrew C. Ling,
 Mohamed S. Abdelfattah, Andrew Bitar, David Han, Roberto Dicecco, Suchit
 Subhaschandra, Chris N. Johnson, Dmitry Denisenko, Josh Fender, Gordon R.
 Chiu.
-(<a href="https://www.mohsaied.com/assets/pdf/heart18.pdf" target="_blank">Mohamed S. Abdelfattah</a>)</li>
+(<a href="https://www.mohsaied.com/assets/pdf/heart18.pdf">Mohamed S. Abdelfattah</a>)</li>
 <li><strong>Content Summary / Key Points</strong>:
 <ul>
 <li>The paper explores <em>mini-float</em> representations (floating point with
 non-standard exponent/mantissa) on FPGAs.
-(<a href="https://cdrdv2-public.intel.com/650513/wp-01281-harnessing-numerical-flexibility-for-deep-learning-on-fpgas.pdf" target="_blank">Intel</a>)</li>
+(<a href="https://cdrdv2-public.intel.com/650513/wp-01281-harnessing-numerical-flexibility-for-deep-learning-on-fpgas.pdf">Intel</a>)</li>
 <li>They also use a <strong>block floating-point</strong> implementation, where many
 numbers share a single exponent, to reduce logic usage.
-(<a href="https://www.mohsaied.com/assets/pdf/heart18.pdf" target="_blank">Mohamed S. Abdelfattah</a>)</li>
+(<a href="https://www.mohsaied.com/assets/pdf/heart18.pdf">Mohamed S. Abdelfattah</a>)</li>
 <li>According to the abstract, this approach can <strong>reduce logic utilization
 by ~3×</strong> and reduce memory bandwidth/capacity needs by more than 40%,
 with <em>negligible impact on accuracy</em>.
-(<a href="https://www.mohsaied.com/assets/pdf/heart18.pdf" target="_blank">Mohamed S. Abdelfattah</a>)</li>
+(<a href="https://www.mohsaied.com/assets/pdf/heart18.pdf">Mohamed S. Abdelfattah</a>)</li>
 <li>They tested their method on Intel Arria 10 FPGAs.
-(<a href="https://www.mohsaied.com/assets/pdf/heart18.pdf" target="_blank">Mohamed S. Abdelfattah</a>)</li>
+(<a href="https://www.mohsaied.com/assets/pdf/heart18.pdf">Mohamed S. Abdelfattah</a>)</li>
 </ul>
 </li>
 <li><strong>Type of Publication</strong>:
 <ul>
 <li>The PDF version is explicitly labeled as a white paper, not as a
 conference or journal paper.
-(<a href="https://cdrdv2-public.intel.com/650513/wp-01281-harnessing-numerical-flexibility-for-deep-learning-on-fpgas.pdf" target="_blank">Intel</a>)</li>
+(<a href="https://cdrdv2-public.intel.com/650513/wp-01281-harnessing-numerical-flexibility-for-deep-learning-on-fpgas.pdf">Intel</a>)</li>
 <li>Another version of the “paper” lists it as an <em>invited paper</em>.
-(<a href="https://www.mohsaied.com/assets/pdf/heart18.pdf" target="_blank">Mohamed S. Abdelfattah</a>)</li>
+(<a href="https://www.mohsaied.com/assets/pdf/heart18.pdf">Mohamed S. Abdelfattah</a>)</li>
 <li>Because it is a white paper, the authorship rules may be more flexible
 (vs. formal academic publication), depending on Intel’s internal process.</li>
 </ul>
@@ -288,7 +288,7 @@ conference or journal paper.
 <div>2025-11-27</div>
 <p>Interestingly, ChatGPT shows a list of authors which is from the PDF on the
 Intel website, where my name is removed. However after that list, it links
-to a PDF on <a href="https://www.mohsaied.com/" target="_blank">Mohamad's website</a> where the paper
+to a PDF on <a href="https://www.mohsaied.com/">Mohamad's website</a> where the paper
 does have my name. That means that ChatGPT is not giving accurate
 information about where it got the list of names. That is confusing.</p>
 </div>
@@ -383,7 +383,7 @@ that white paper to see whether there’s evidence that your name was ever
 listed. Do you want me to do that?</p>
 <p><strong>Me:</strong> ChatGPT, you are only looking at the PDF where my name was removed,
 here is the original academic paper:
-<a href="https://dl.acm.org/doi/10.1145/3241793.3241794" target="_blank">https://dl.acm.org/doi/10.1145/3241793.3241794</a></p>
+<a href="https://dl.acm.org/doi/10.1145/3241793.3241794">https://dl.acm.org/doi/10.1145/3241793.3241794</a></p>
 <p><strong>ChatGPT:</strong> Thanks for sending the link. I found the details of the paper
 titled <strong>Harnessing Numerical Flexibility for Deep Learning on FPGAs</strong> and we
 can review them together — then discuss what avenues you might have in regard
@@ -397,9 +397,9 @@ Chris N. Johnson, Dmitry Denisenko, Josh Fender, Gordon R. Chiu: <em>Harnessing
 Numerical Flexibility for Deep Learning on FPGAs</em>. In the proceedings of the
 9th International Symposium on Highly-Efficient Accelerators and
 Reconfigurable Technologies (HEART) 2018.
-(<a href="https://dblp.org/pid/20/6707" target="_blank">DBLP</a>)</li>
+(<a href="https://dblp.org/pid/20/6707">DBLP</a>)</li>
 <li>The publicly-available version of the paper (via Intel) lists those authors.
-(<a href="https://cdrdv2-public.intel.com/650513/wp-01281-harnessing-numerical-flexibility-for-deep-learning-on-fpgas.pdf" target="_blank">Intel</a>)</li>
+(<a href="https://cdrdv2-public.intel.com/650513/wp-01281-harnessing-numerical-flexibility-for-deep-learning-on-fpgas.pdf">Intel</a>)</li>
 <li>So, your name does not appear on the author list of that published version.</li>
 </ul>
 <div class="dated-edit">
