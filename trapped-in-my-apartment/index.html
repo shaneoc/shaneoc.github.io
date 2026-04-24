@@ -38,34 +38,40 @@ img {
     max-width: 100%;
 }
 
-details {
-    margin: 0.3rem 0;
-    clear: both;
-}
-
-details > p {
-    padding: 0 1.6rem;
-    clear: both;
-}
-
-summary {
+details.major-event > summary {
     cursor: pointer;
+    padding: 0.2rem 0.4rem;
     font-size: 1.25rem;
     font-weight: bold;
-    padding: 0.2rem 0.4rem;
 }
 
-summary > span {
-    float: right;
-    font-size: 0.9em;
+details.major-event > summary > span {
+    display: inline flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    width: calc(100% - 1.25rem);
+    box-sizing: border-box;
+}
+
+details.major-event > summary > span > :last-child {
+    margin-inline-start: auto;
+    font-size: 1.125rem;
     font-weight: normal;
+}
+
+details.major-event {
+    margin: 0.3rem 0;
+}
+
+details.major-event > p {
+    padding: 0 1.6rem;
 }
 
 .window-sign {
     font-family: monospace;
     font-size: 1.2em;
 }
-
 </style>
 <script>
 if (document.location.href.startsWith('file:')) {
@@ -232,7 +238,10 @@ person who contacted me told me that Canada Post would not do anything to
 assist me and would not deliver mail directly to the apartment.</li>
 </ul>
 <h2>Major Events</h2>
-<details><summary>Broke Up With My Girlfriend <span>November 2017</span></summary>
+<details class="major-event"><summary><span>
+<span>Broke Up With My Girlfriend</span>
+<span>November 2017</span>
+</span></summary>
 <p>In November 2017, I broke up with my girlfriend who I had been dating for 10
 years. This was an extremely difficult decision for me and I did not enjoy
 doing it.</p>
@@ -250,7 +259,10 @@ find a match more quickly, because they would not be forced to look at random
 profiles one at a time. Unfortunately, as far as I am aware, a search engine
 like that does not currently exist.</p>
 </details>
-<details><summary>Tenstorrent Job Offer <span>January 2019</span></summary>
+<details class="major-event"><summary><span>
+<span>Tenstorrent Job Offer</span>
+<span>January 2019</span>
+</span></summary>
 <p>In January 2019, I was contacted by someone who left Intel to work at
 Tenstorrent. They tried to convince me to join them at Tenstorrent. In order to
 convince me, they showed me <a href="../ai/chatgpt/0032-academic-paper-query.html#the-paper-without-my-name">a paper that Intel had
@@ -289,7 +301,10 @@ saw that the Tenstorrent chip is listed in the article as an example of a
 hardware implementation. This makes it seem possible that they are using the
 idea after hearing about it from my work on the DLA project.</p>
 </details>
-<details><summary>COVID-19 Pandemic Starts <span>November 2019</span></summary>
+<details class="major-event"><summary><span>
+<span>COVID-19 Pandemic Starts</span>
+<span>November 2019</span>
+</span></summary>
 <p>The COVID-19 pandemic started at the end of 2019. I had already been spending a
 lot of time alone in my apartment due to being single, and the pandemic made it
 worse. Every minute that I was not in a video chat with someone else was a
@@ -297,7 +312,10 @@ minute I was spending alone in my apartment and unable to leave. I became very
 anxious about my social relationships, and convincing people to want to
 continue socializing with me.</p>
 </details>
-<details><summary>Groq Job Offer <span>December 2020</span></summary>
+<details class="major-event"><summary><span>
+<span>Groq Job Offer</span>
+<span>December 2020</span>
+</span></summary>
 <p><strong>Office Gossip</strong></p>
 <p>Around October 2020, I had a conversation with my manager at Intel. He asked me
 about someone else on the team, and asked me if I thought the other person on
@@ -406,8 +424,10 @@ wondered if this had anything to do with the fact that I had told the former
 Intel manager that I was concerned about it when I was chatting with them in
 the video chat.</p>
 </details>
-<details><summary>Computer Hack and Visit to the Psychiatric Facility
-<span>~November 2021</span></summary>
+<details class="major-event"><summary><span>
+<span>Computer Hack and Visit to the Psychiatric Facility</span>
+<span>~November 2021</span>
+</span></summary>
 <p>By the time I started working at Groq, I had gotten into the habit of watching
 YouTube videos often. YouTube videos are good when you live alone and want
 social interaction and do not have other options.</p>
@@ -465,7 +485,10 @@ this, and people complained about it, that people were not likely to believe
 them.</p>
 <p>I ended up quitting my job at Groq. I was afraid of them.</p>
 </details>
-<details><summary>RapidSilicon Job Offer <span>November 2021</span></summary>
+<details class="major-event"><summary><span>
+<span>RapidSilicon Job Offer</span>
+<span>November 2021</span>
+</span></summary>
 <p>After I left Intel and started my job at Groq, I received a connection request
 on LinkedIn from someone who had recently quit their job at Intel and had
 started working at a company called RapidSilicon. RapidSilicon was a startup
@@ -538,7 +561,10 @@ think this was fair. I did not in fact end up writing very much code. However,
 I did genuinely make efforts to give useful presentations, send useful emails,
 and participate in meetings.</p>
 </details>
-<details><summary>Brain Hemisphere Language <span>November 2022</span></summary>
+<details class="major-event"><summary><span>
+<span>Brain Hemisphere Language</span>
+<span>November 2022</span>
+</span></summary>
 <p><strong>Visiting Newfoundland</strong></p>
 <p>I was laid off from RapidSilicon in November 2022. In December, I travelled
 back to Newfoundland for Christmas.</p>
@@ -690,7 +716,10 @@ taking the photo with my phone camera.</p>
 <figcaption>Photo 1 - YouTube suggested video with 11:11 pattern (photo taken on 2026-04-08)</figcaption>
 </figure>
 </details>
-<details><summary>War on Gaza Starts <span>October 2023</span></summary>
+<details class="major-event"><summary><span>
+<span>War on Gaza Starts</span>
+<span>October 2023</span>
+</span></summary>
 <p>In addition to YouTube videos, I found that another way to cope with spending a
 lot of time without any social interaction was to watch the news. I use
 <a href="https://www.teksavvy.com/">TekSavvy</a> for television service, and I am able to
@@ -784,8 +813,10 @@ during the parts where the news anchor would describe people being killed. I
 did this for a few days until people complained and my landlord asked me to
 stop, and so I stopped.</p>
 </details>
-<details><summary>Second Visit to the Psychiatric Facility
-<span>~March 2024</span></summary>
+<details class="major-event"><summary><span>
+<span>Second Visit to the Psychiatric Facility</span>
+<span>~March 2024</span>
+</span></summary>
 <p>A few weeks after I began posting on LinkedIn about Palestine, the police
 showed up at my apartment. They told me they had been sent to obtain me and
 bring me to the psychiatric facility. Apparently my family and friends had gone
@@ -849,7 +880,10 @@ better at convincing people than I was. After that, my dad and I went back to
 my apartment, where we spoke briefly before he left and returned to
 Newfoundland.</p>
 </details>
-<details><summary>Trapped In My Apartment <span>~March 2024</summary>
+<details class="major-event"><summary><span>
+<span>Trapped In My Apartment</span>
+<span>~March 2024</span>
+</span></summary>
 <p><strong>Socially Isolated</strong></p>
 <p>At this point, I was even more sure that I wanted to avoid leaving my
 apartment. It seemed like regular people could be manipulated into doing really
@@ -1239,8 +1273,10 @@ bombed nuclear sites in Iran in addition to other targets. I created an
 plan</a> and
 posted it on LinkedIn and my website.</p>
 </details>
-<details><summary>Third Visit to the Psychiatric Facility
-<span>January 2026</span></summary>
+<details class="major-event"><summary><span>
+<span>Third Visit to the Psychiatric Facility</span>
+<span>January 2026</span>
+</span></summary>
 <p><strong>Before the Visit</strong></p>
 <p>In December 2025, I created a <a href="../journal/2025-12-14-strange-2021.html">journal
 entry</a> on my website in which I
