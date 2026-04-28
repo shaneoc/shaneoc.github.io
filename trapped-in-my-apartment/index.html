@@ -597,8 +597,8 @@ them.</p>
 connection request on LinkedIn from someone who had recently quit their job at
 Intel and had started working for a company called RapidSilicon. RapidSilicon
 was a startup that was going to directly compete with Intel by selling FPGAs.
-Both myself and the person who added me on LinkedIn previously worked for the
-Intel Programmable Solutions Group (PSG), which sold FPGAs.</p>
+Both myself and the person who added me on LinkedIn previously worked for Intel
+Programmable Solutions Group (PSG), which sold FPGAs.</p>
 <p>According to the website for RapidSilicon, their plan was to sell FPGAs that
 were based on an <a href="https://en.wikipedia.org/wiki/Open_source">open source</a>
 hardware design and were designed to be used with open source software tools. I
@@ -610,56 +610,86 @@ source. Even though it was harder to make money with open source, it seemed
 like projects that were open source were much more likely to become well-known
 and be seen as a technical success, which made it easier to justify working on
 them even if they were not going to be as profitable.</p>
-<p>I applied for jobs at multiple companies, one of which was RapidSilicon. It was
-much more stressful than the previous time I had applied for jobs, while I was
-still working at Intel. It was intimidating to consider working for a company
-where I did not know anyone. It was also a little bit sad, because I had
-actually been enthusiastic about working at Groq. I could tell that AI was
-going to be important in the future and it seemed like they had technically
-interesting work that needed to be done.</p>
-<p>After I spoke to the people at RapidSilicon, they gave me a job offer and I
-decided to accept it. RapidSilicon seemed like a safe bet because the job I was
-going to do was extremely similar to a job I had done while I still worked at
-Intel, and so I was confident that I would be able to do it. I was going to be
-responsible for their timing analysis software, which was going to be built by
-putting together existing open source software and making improvements. My
-first task was going to be to modify the placement and routing engine that is
-part of <a href="https://verilogtorouting.org/">VPR</a> so that it could interface with
-<a href="https://github.com/The-OpenROAD-Project/OpenSTA">OpenSTA</a>, rather than using
-the built-in timing analyzer that is part of VPR.</p>
-<p>I interviewed and accepted the RapidSilicon offer by December 2021, however I
-did not start working there until I had finished working at Groq for one year.
-I have read on the Internet that it looks bad on your resume to have worked for
-less than a year at a company, and so it seemed like I should probably follow
-the standard advice. I also wanted to be able to exercise the options and buy
-the shares that I was supposed to get after a year, even though I technically
-was afraid of the people at the company. I did not want it to be the case that
-my former coworkers from the DLA team were going to make a large amount of
-money and I was not going to participate in what was happening in some way.</p>
+<p>Once I had decided that I was going to quit my job at Groq, the fact that
+someone from RapidSilicon had recently added me on LinkedIn was extremely
+convenient. I decided to contact the person who had added me, and we arranged a
+job interview. From their website, I could see that they were hiring someone to
+work on <a href="https://en.wikipedia.org/wiki/Static_timing_analysis">timing analysis
+software</a>. I had
+previously worked on this type of software at Intel, and so I told them that
+this was the role that I was interested in. After a conversation with the
+hiring manager, they decided to offer me the job, with a title of Principal
+Engineer. I was pleased with the job title.</p>
+<p>There were a few other options I considered besides RapidSilicon. One obvious
+option was that I could return to Intel. However, it occurred to me that the
+work that I would do at RapidSilicon was very similar to the kind of work they
+did at Intel. By working at RapidSilicon, I would still be gaining experience
+that should theoretically mean that I would still be able to get a job at Intel
+again after working at RapidSilicon, if that was what I wanted, assuming that
+the people at Intel did not mind that I had previously worked at RapidSilicon.
+In addition, at RapidSilicon, since it was a smaller company, it seemed like
+there would probably be more opportunities to work on more technically
+interesting projects, since there was less of a chance of someone else at the
+company already being responsible for them.</p>
+<p>I also considered working for Amazon. Amazon has a large office in downtown
+Toronto, and so it seemed like it might be similar to working at Intel, at
+least in terms of the physical office. However, I had previously read <a href="https://www.nytimes.com/2015/08/16/technology/inside-amazon-wrestling-big-ideas-in-a-bruising-workplace.html">an
+article about working for
+Amazon</a>
+that made it seem like it might be stressful to work there. RapidSilicon was a
+much smaller company, and it seemed like that might mean it would be less
+stressful, depending on how the company was run.</p>
+<p>In the end, I decided to accept the job offer from RapidSilicon, which I did in
+December 2021. Once I did this, however, I did not actually start working there
+until I had finished working at Groq for one year. I had read on the Internet
+that it looks bad on your resume to have worked for less than a year at a
+company, and so it seemed like I should probably follow the standard advice. I
+also wanted to be able to exercise the options and buy the shares that I was
+supposed to get after a year, even though I technically was afraid of the
+people at the company. I did not want it to be the case that my former
+coworkers from the DLA team were going to make a large amount of money and I
+was not going to participate in what was happening in some way.</p>
 <p><strong>Working at RapidSilicon</strong></p>
-<p>Once I started at RapidSilicon, I unfortunately realized that working there was
-not really going to solve my problems. I still did not really understand the
-YouTube videos and whether my computer had been remotely controlled. I also
-felt that I did not know the people at RapidSilicon very well. I was only in
-contact with a small number of people, as most of the employees were located in
-California or Pakistan.</p>
-<p>I increasingly started to feel uncomfortable with the job itself. I was working
-on code that could theoretically be adapted and used to program Intel FPGAs
-without using the software that Intel made, and our plan was to release it as
-open source. If people ended up using it instead of the Intel software, that
-could put the team I had worked with at Intel at risk of being laid off. I
-started to become afraid that I was doing something that might cause even more
-people to dislike me.</p>
+<p>My first task at RapidSilicon was going to be to modify the placement and
+routing engine that is part of <a href="https://verilogtorouting.org/">VPR</a> so that it
+could interface with
+<a href="https://github.com/The-OpenROAD-Project/OpenSTA">OpenSTA</a>, rather than using
+the built-in timing analyzer that is part of VPR. This was an interesting task,
+though it took some time to understand the OpenSTA source code. It was similar
+to the code that I had worked on at Intel in many ways, however it also
+differed significantly due to the fact that OpenSTA was designed to analyze the
+timing of
+<a href="https://en.wikipedia.org/wiki/Application-specific_integrated_circuit">ASICs</a>,
+rather than FPGAs like the Intel code had been. It seemed like it might be
+possible to use the fact that the timing analyzer was designed to analyze the
+timing of ASICs in order to add features that the Intel software did not have.
+I liked the idea of doing the investigation to determine if it was possible.</p>
+<p>However, not long after I started working at RapidSilicon, I started to feel
+uncomfortable with the job. I felt like I did not know the people working there
+very well. I was only in contact with a small number of people, as most of the
+employees were located in California or Pakistan. I felt very disconnected, and
+I found it frustrating. Due to the lack of information, I started to become
+concerned that there might be something about the company that was not
+legitimate. I was not sure what I should do about this.</p>
+<p>I also started to become uncomfortable with the fact that the company seemed to
+be planning to release everything as open source. It seemed like something had
+to be closed source or controlled in some way so that the company would be able
+to make money. It was not clear to me how this was going to happen. I also knew
+that the code the company was working on could theoretically be adapted and
+used to program Intel FPGAs without using the software that Intel made. If it
+was released as open source, and people ended up using it instead of the Intel
+software, that could put the team I had worked with at Intel at risk of being
+laid off. I started to become afraid that I was doing something that might
+cause even more people to dislike me.</p>
+ 
 <p>I figured that there must be other people at the company with the same concern.
-Even at RapidSilicon, it seemed like some things had to be kept closed source
-so that the company would be able to charge money. I started to suspect that
-maybe the company had a subtle goal of intentionally developing the software
-slowly without saying they were doing so, in order to give the company time to
-hire people and increase in perceived value, so that it could eventually be
-acquired for a price similar to other FPGA companies. I was not sure if this
-was objectionable in some way, however working slowly was certainly the easiest
-thing to do in the short term while I decided what I was going to do in the
-long term, so that is what I did.</p>
+I started to suspect that maybe the company had a subtle goal of intentionally
+developing the software slowly without saying they were doing so, in order to
+give the company time to hire people and increase in perceived value, so that
+it could eventually be acquired for a price similar to other FPGA companies. I
+was not sure if this was objectionable in some way, however working slowly was
+certainly the easiest thing to do in the short term while I decided what I was
+going to do in the long term, so that is what I did.</p>
 <p>RapidSilicon laid me off after 10 months. I have mixed feeling about whether I
 think this was fair. I did not in fact end up writing very much code. However,
 I did genuinely make efforts to give useful presentations, send useful emails,
