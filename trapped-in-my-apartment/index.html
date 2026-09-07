@@ -2869,15 +2869,14 @@ held a meeting to discuss the technical direction of the DLA project. He had
 created slides to describe the technical work that he felt needed to be done
 next. As I watched the presentation, I started to feel frustrated. I had
 written a lot of the code that was being referred to in the presentation, and I
-felt that many of the things being described in the slides did not really make
-sense and did not seem like they could be implemented the way that they were
-being described. I objected strongly during the meeting. Unfortunately,
-everyone else in the meeting was in a physical meeting room while I had called
-in remotely, and so I was unable to tell how others were perceiving what I was
-saying. Nobody else in the meeting spoke up to give their opinion. Eventually,
-I gave up and stopped debating the issue. I felt frustrated about this meeting,
-and from later interactions with my manager I could tell that he was frustrated
-as well.</p>
+disagreed with many of the things being described in the slides. It did not
+seem like they could be implemented the way that they were being described. I
+objected strongly during the meeting. Unfortunately, everyone else in the
+meeting was in a physical meeting room while I had called in remotely, and so I
+was unable to tell how others were perceiving what I was saying. Nobody else in
+the meeting spoke up to give their opinion. Eventually, I gave up and stopped
+debating the issue. I felt frustrated about this meeting, and from later
+interactions with my manager I could tell that he was frustrated as well.</p>
 <p>Another time, I had a meeting with a different manager on the DLA team. In this
 meeting, I had been trying to communicate and resolve the problems I had been
 having with the managers on the DLA team that made it seem like they did not
@@ -2992,15 +2991,33 @@ that layoffs might be coming, I started to become worried that I could be laid
 off as well. In addition, other people on the team who had quit had been
 getting jobs at various AI startups that were opening offices in Toronto. I
 felt that I liked the idea of working on something interesting and potentially
-making a lot of money. I decided to apply for jobs at
-<a href="https://en.wikipedia.org/wiki/Groq">Groq</a>,
-<a href="https://en.wikipedia.org/wiki/Cerebras">Cerebras</a>, Untether AI, and
-Tenstorrent. All of these companies had employees who used to work at Intel
-that I at least somewhat knew, which made them appealing. Groq and Cerebras
-were the companies that I was most interested in, as I had read about their
-chip architectures and felt that they had some innovative ideas. Tenstorrent
-did still seem somewhat appealing because I knew a bunch of the people who
-worked there, however I did not know very much about their chip architecture.</p>
+making a lot of money. The timing also seemed like it made sense, as it had
+started to become difficult to find opportunities to significantly increase the
+performance of the DLA code without starting to modify the mathematics behind
+the neural networks themselves or switching to another chip besides an FPGA. I
+had actually been starting to spend a lot of time on a
+<a href="https://en.wikipedia.org/wiki/Python_(programming_language)">Python-based</a>
+testing framework for DLA, rather than trying to significantly improve the
+performance.</p>
+<p>I decided to apply for jobs at <a href="https://en.wikipedia.org/wiki/Groq">Groq</a>,
+<a href="https://en.wikipedia.org/wiki/Cerebras">Cerebras</a>, Tenstorrent, and Untether
+AI. All of these companies had employees who used to work at Intel that I at
+least somewhat knew, which made them appealing. Groq and Cerebras were the
+companies that I was the most interested in, as I had read about their chip
+architectures and felt that they had some innovative ideas. Groq had a method
+of increasing the density of the
+<a href="https://en.wikipedia.org/wiki/Binary_multiplier">multipliers</a> on their chip
+that seemed innovative, while Cerebras was increasing the total size of their
+chip so that the multipliers that they had were better connected. Tenstorrent
+still seemed appealing because I knew a bunch of the people who worked there,
+however as far as I was aware their architecture seemed like it would have a
+multiplier density that was probably similar to the architecture of a
+<a href="https://en.wikipedia.org/wiki/Graphics_processing_unit">GPU</a>, so it was not as
+clear that there might be a significant performance advantage over other GPUs
+that already existed. Untether had an architecture that involved a memory
+optimization that I did not understand very well, and they had the fewest
+number of people working there that I knew as well as seeming to have the least
+funding, which made me less interested.</p>
 <p>Unfortunately, even though I felt that the interview went well at Cerebras, I
 did not receive an offer from the company. I did receive a job offer from Groq,
 however this was the company where my manager from Intel, who had removed my
@@ -3104,15 +3121,19 @@ and it caused me to have a really bad hangover, even after consuming only a
 very small amount of alcohol. I stopped taking the pills almost immediately.</p>
 <p><strong>Working at Groq</strong></p>
 <p>Once I started at Groq, I immediately felt like it was important to make
-technical contributions in order to prove that I deserved to be there. The
-situation seemed very uncertain to me. It appeared that the others who had left
-Intel for Groq earlier were each given responsibility for important parts of
-the code, and were being treated like they were going to be promoted to be
-managers. It seemed like they had a better relationship with my manager, and I
-strongly suspected that they were having conversations and not including me.
-This bothered me because I felt that I had more experience than those
-coworkers, both in terms of our time on the DLA team, and in terms of the total
-length of our careers.</p>
+technical contributions in order to prove that I deserved to be there. I had
+joined the compiler team, which was a software team, and in my role on the DLA
+team at Intel I had been responsible for writing RTL for the FPGA, which was a
+significantly different style of coding than writing software. However, I felt
+confident that I was good at writing software and I wanted to prove it. In
+addition, I noticed that the others who had left Intel for Groq earlier were
+each given responsibility for important parts of the code, and were being
+treated like they were going to be promoted to be managers. It seemed like they
+had a better relationship with my manager, and I strongly suspected that they
+were having conversations and not including me. I became worried that I would
+be treated like an outsider, and I felt like I had to prove that I had
+technical skills so that my position at the company would be safe and I would
+not be at risk of being laid off.</p>
 <p>We decided that I would work on trying to find performance optimizations in the
 code in general. I wanted to find places in the code where it was possible to
 make an optimization that would cause a large improvement in performance that
@@ -3289,19 +3310,17 @@ little less afraid that my coworkers had anything to do with the YouTube
 videos. However, I still felt like the relationship with them was not very
 good. I also now felt embarrassed about quitting without notice and acting
 strange in a very obvious way.</p>
-<p>After some discussion with my manager, he suggested that I should change to a
-different team at Groq. The team that I had joined when I started at Groq was
-the compiler team, which meant that I was working on software, and my manager
-suggested that I should join the hardware team instead. This would mean writing
-RTL, similar to the role that I had when I was on the DLA team at Intel. I was
-not sure if that was what I really wanted, as I did not know anyone on that
-team and they were mostly remote, and I had liked that I was gaining more
-software experience for my resume by working on the compiler team. However, by
-this point I felt like I was not really going to be able to fit in on the
-compiler team anyway, so I reluctantly agreed. I had been feeling like it was
-increasingly likely that I was going to end up finding another job in any case,
-so I figured that at worst it would mean that I would just be there for a short
-amount of time if I did not enjoy it.</p>
+<p>After some discussion with my manager, he suggested that I should change to the
+hardware team at Groq. This would mean writing RTL, similar to the role that I
+had when I was on the DLA team at Intel. I was not sure if that was what I
+really wanted, as I did not know anyone on that team and they were mostly
+remote, and I had liked that I was gaining more software experience for my
+resume by working on the compiler team. However, by this point I felt like I
+was not really going to be able to fit in on the compiler team anyway, so I
+reluctantly agreed. I had been feeling like it was increasingly likely that I
+was going to end up finding another job in any case, so I figured that at worst
+it would mean that I would just be there for a short amount of time if I did
+not enjoy it.</p>
 <p>I ended up leaving Groq after almost exactly one year. I had read online that
 it looked better on your resume if you worked at least a year at every job and
 did not leave earlier than that. In addition, I wanted to be able to exercise
