@@ -165,7 +165,7 @@ if (document.location.href.startsWith('file:')) {
 </head><body><div id="main">
 <h1>Trapped in My Apartment</h1>
 <p>First Version: 2026-04-11<br>
-Last Update: 2026-09-08<br>
+Last Update: 2026-09-09<br>
 <a href="https://github.com/shaneoc/shane.oconnell.cc/commits/main/trapped-in-my-apartment/index.html">Page History</a></p>
 <h2>Instructions (read this first)</h2>
 <p><strong>If you came here from LinkedIn</strong>, my website contains <a href="../resume.html">a detailed
@@ -4544,8 +4544,9 @@ performance of the DLA code without starting to modify the mathematics behind
 the neural networks themselves or switching to another chip besides an FPGA. I
 had actually been starting to spend a lot of time on a
 <a href="https://en.wikipedia.org/wiki/Python_(programming_language)">Python-based</a>
-testing framework for DLA, rather than trying to significantly improve the
-performance.</p>
+testing framework for DLA, in order to improve the performance of running the
+tests, rather than trying to significantly improve the performance of DLA
+itself.</p>
 <p>I decided to apply for jobs at <a href="https://en.wikipedia.org/wiki/Groq">Groq</a>,
 <a href="https://en.wikipedia.org/wiki/Cerebras">Cerebras</a>, Tenstorrent, and Untether
 AI. All of these companies had employees who used to work at Intel that I at
@@ -4555,14 +4556,21 @@ architectures and felt that they had some innovative ideas. Groq had a method
 of increasing the density of the
 <a href="https://en.wikipedia.org/wiki/Binary_multiplier">multipliers</a> on their chip
 that seemed innovative, while Cerebras was increasing the total size of their
-chip so that the multipliers that they had were better connected. Tenstorrent
-still seemed appealing because I knew a bunch of the people who worked there,
-however as far as I was aware their architecture seemed like it would have a
-multiplier density that probably would not be any better than the multiplier
-density of a <a href="https://en.wikipedia.org/wiki/Graphics_processing_unit">GPU</a>, so
-it was not as clear that there might be a significant performance advantage
-over the GPUs that already existed. Untether had an architecture that involved
-a memory optimization that I did not understand very well, and they had the
+chip so that they could fit more multipliers onto one chip without increasing
+the density. Both of these approaches seemed like they could improve
+performance. Tenstorrent still seemed appealing because I knew a bunch of the
+people who worked there, however as far as I was aware their architecture
+seemed like it would have a multiplier density that would probably not be any
+better than the multiplier density of a
+<a href="https://en.wikipedia.org/wiki/Graphics_processing_unit">GPU</a>, so it was not as
+clear that there might be a significant performance advantage over the GPUs
+that already existed. Untether had an architecture that involved a memory
+optimization that I did not understand very well. I think they were trying to
+put their multipliers closer to memory in order to reduce power usage, however
+it seemed like they were doing something unique at the
+<a href="https://en.wikipedia.org/wiki/Application-specific_integrated_circuit">ASIC</a>
+level with memory cells, and I had never worked on an ASIC before, so it was
+not clear to me whether that was a big deal or not. In any case, they had the
 fewest number of people working there that I knew as well as seeming to have
 the least funding, which made me less interested.</p>
 <p>Unfortunately, even though I felt that the interview went well at Cerebras, I
